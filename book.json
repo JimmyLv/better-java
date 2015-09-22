@@ -10,7 +10,7 @@
             ],
             "pluginsConfig": {
                 "disqus": {
-                    "shortName": ""
+                    "shortName": "beeterjava"
                 }
             }
         },

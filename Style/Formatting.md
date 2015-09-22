@@ -15,7 +15,7 @@ If you absolutely need a code formatting guide, I highly recommend
 
 ### Javadoc Java文档
 
-Documenting your user facing code is important. And this means 
+Documenting your user facing code is important. And this means
 [using examples][javadocex] and using sensible descriptions of variables,
 methods, and classes.
 

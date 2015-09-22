@@ -32,14 +32,14 @@ keyword works with if/else blocks and with try/catch blocks. Of course, if the
 
 Collections should, whenever possible, use the Guava [ImmutableMap][immutablemap],
 [ImmutableList][immutablelist], or [ImmutableSet][immutableset] classes. These
-have builders so that you can build them up dynamically and then mark them 
+have builders so that you can build them up dynamically and then mark them
 immutable by calling the build method.
 
 集合类都应该尽一切可能地使用Guava的[ImmutableMap][immutablemap]、
 [ImmutableList][immutablelist]或者[ImmutableSet][immutableset]。他们都有builder模式以便于你可以动态得构建他们，然后通过调用build方法来使之保持不可变。
 
 Classes should be made immutable by declaring fields immutable (via *final*)
-and by using immutable collections. Optionally, you can make the class itself 
+and by using immutable collections. Optionally, you can make the class itself
 *final* so that it can't be extended and made mutable.
 
 类都应该通过声明不可变字段的方式（使用 *final*）被构造成不可变的，以及使用不可变集合。可选的是，你也可以将这个类声明为*final*，所以它就不可能被继承和被改变。

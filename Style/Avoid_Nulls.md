@@ -1,13 +1,13 @@
 ## Avoid Nulls 避免Null
 
 Try to avoid using nulls when you can. Do not return null collections when you
-should have instead returned an empty collection. If you're going to use null, 
-consider the [@Nullable][nullable] annotation. [IntelliJ IDEA][intellij] has 
+should have instead returned an empty collection. If you're going to use null,
+consider the [@Nullable][nullable] annotation. [IntelliJ IDEA][intellij] has
 built-in support for the @Nullable annotation.
 
 尽可能尝试避免使用Nulls。当你可以返回空集合的时候就不要返回null的集合对象。如果你要使用null的话，考虑一下[@Nullable][nullable]注解。[IntelliJ IDEA][intellij]已经内置支持了@Nullable注解。
 
-If you're using [Java 8][java8], you can use the excellent new 
+If you're using [Java 8][java8], you can use the excellent new
 [Optional][optional] type. If a value may or may not be present, wrap it in
 an *Optional* class like this:
 

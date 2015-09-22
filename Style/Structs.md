@@ -48,7 +48,7 @@ that it can't be changed.
 这使得代码行数减少了一半。此外，这个类是不可变的，除非你扩展它，所以我们可以更容易进行推理，因为我们知道它不能被改变。
 
 If you're storing objects like Map or List that can be modified easily, you
-should instead use ImmutableMap or ImmutableList, which is discussed in the 
+should instead use ImmutableMap or ImmutableList, which is discussed in the
 section about immutability.
 
 如果你正在存储Map或者List这样可以被轻易修改的类，你应该使用ImmutableMap或者ImmutableList，这将会在immutability部分进行讨论。
@@ -80,7 +80,7 @@ public class ComplicatedDataHolder {
     public static class Builder {
         private String data;
         private int num;
-        
+
         public Builder data(String data) {
             this.data = data;
             return this;
@@ -93,7 +93,7 @@ public class ComplicatedDataHolder {
 
         public ComplicatedDataHolder build() {
             return new ComplicatedDataHolder(data, num); // etc
-        }  
+        }
     }
 }
 ```

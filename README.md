@@ -136,7 +136,7 @@ interface.
 
 这里有其他的[更好的Builder例子][builderex]，可以给你一些该有的味道。这就彻底解决了一些我们曾经试图避免的样板文件，但它可以让你使用不可变对象以及一个非常流畅的接口。
 
-## Exceptions
+## Exceptions 异常
 
 [Checked exceptions][checkedex] should be used with caution, if at all. They 
 force your users to add many try/catch blocks and wrap your exceptions in their 
@@ -149,12 +149,18 @@ One nitfy trick is to put RuntimeExceptions in your method's throws declaration.
 This has no effect on the compiler, but will inform your users via documentation
 that these exceptions can be thrown.
 
-## Dependency injection
+如果真的需要[检查异常][checkedex]，也应当谨慎使用。他们将强迫你的用户添加try/catch代码块去把你的异常包裹起来。更好的方式是将你的异常继承自RuntimeException。这可以允许你的用户可以使用他们喜欢的方式处理异常，而不是强迫他们去处理/声明每一次所抛出的异常，这简直就是污染代码。
+
+另一个需要注意的小技巧就是将RuntimeExceptions放到你的函数抛出声明里（-。-）。这对编译器没有任何影响，但是却可以通知你的用户可以通过文档知道哪些异常可以被抛出。
+
+## Dependency injection 依赖注入
 
 This is more of a software engineering section than a Java section, but one of
 the best ways to write testable software is to use [dependency injection][di]
 (DI). Because Java strongly encourages OO design, to make testable software,
 you need to use DI.
+
+这部分更像是谈论软件工程而不仅仅是Java，但是编写可测试软件的最佳方法之一就是使用[依赖注入][di]（DI）。因为Java非常推崇面向对象设计来保持软件的可测试性，你需要使用DI。
 
 In Java, this is typically done with the [Spring Framework][spring]. It has a
 either code-based wiring or XML configuration-based wiring. If you use the XML 
@@ -162,21 +168,29 @@ configuration, it's important that you [don't overuse Spring][springso] because
 of its XML-based configuration format.  There should be absolutely no logic or
 control structures in XML. It should only inject dependencies.
 
+在Java里，实现DI的典型例子就是[Spring框架](spring)。它既可以基于代码来装配，也可以基于XML文件来进行配置。如果使用XML配置的话，非常重要的一点就是[不要滥用Spring][springso]，因为基于XML配置的格式问题。很显然不能够在XML里面放有任何逻辑或者控制结构，它仅仅用于注入依赖。
+
 Good alternatives to using Spring is Google and Square's [Dagger][dagger]
 library or Google's [Guice][guice]. They don't use Spring's XML 
 configuration file format, and instead they put the injection logic in
 annotations and in code.
 
-## Avoid Nulls
+使用Spring的另一种选择是Google和Square的[Dagger][dagger]库或者是Google的[Guice][guice]。他们不会使用Spring的XML配置文件格式，而是将注入逻辑放在代码的注解里面。
+
+## Avoid Nulls 防止使用Null
 
 Try to avoid using nulls when you can. Do not return null collections when you
 should have instead returned an empty collection. If you're going to use null, 
 consider the [@Nullable][nullable] annotation. [IntelliJ IDEA][intellij] has 
 built-in support for the @Nullable annotation.
 
+尽可能尝试避免使用Nulls。当你可以返回空集合的时候就不要返回null的集合对象。如果你要使用null的话，考虑一下[@Nullable][nullable]注解。[IntelliJ IDEA][intellij]已经内置支持了@Nullable注解。
+
 If you're using [Java 8][java8], you can use the excellent new 
 [Optional][optional] type. If a value may or may not be present, wrap it in
 an *Optional* class like this:
+
+如果你正在使用[Java 8][java8]，你可以使用这个非常棒的[Optional][optional]新类型。如果一个值不确定是否需要显示，就可以把它放到一个*Optional*类里边：
 
 ```java
 public class FooWidget {
@@ -203,6 +217,8 @@ present. *Optional* has methods like *isPresent*, which may make it feel like
 not a lot is different from just checking *null*. But it allows you to write
 statements like:
 
+所以现在就很明确了，*data*永远不可能是null，但是*bar*可能显示出来也可能不显示。*Optional*有一些像*isPresent*的方法，可以让它感觉很大不同，就不只是检查*null*了。但是它也允许你写一些这样的语句：
+
 ```java
 final Optional<FooWidget> fooWidget = maybeGetFooWidget();
 final Baz baz = fooWidget.flatMap(FooWidget::getBar)
@@ -214,12 +230,19 @@ Which is much better than chained if null checks. The only downside of using
 Optional is that the standard library doesn't have good Optional support, so
 dealing with nulls is still required there.
 
-## Immutable-by-default
+这比链式的null检查好多了。唯一的缺点是标准库还没有很好地支持Optional的使用，所以
+处理空值依然是有必要的。
+
+## Immutable-by-default 默认不可变
 
 Unless you have a good reason to make them otherwise, variables, classes, and
 collections should be immutable.
 
+除非你理由充分，不然的话就保持变量、类和集合数据不可变。
+
 Variable references can be made immutable with *final*:
+
+变量引用可以被*final*修饰成不可变的。
 
 ```java
 final FooWidget fooWidget;
@@ -240,18 +263,27 @@ Now you can be sure that fooWidget won't be accidentally reassigned. The *final*
 keyword works with if/else blocks and with try/catch blocks. Of course, if the
 *fooWidget* itself isn't immutable you could easily mutate it.
 
+现在你可以确定的是fooWidget不会被意外的重新赋值。*final*关键字将会和if/else以及try/catch代码块共同作用。当然，如果*fooWidget*不是不可变的话，你可以轻松得改变它。
+
 Collections should, whenever possible, use the Guava [ImmutableMap][immutablemap],
 [ImmutableList][immutablelist], or [ImmutableSet][immutableset] classes. These
 have builders so that you can build them up dynamically and then mark them 
 immutable by calling the build method.
 
+集合类都应该尽一切可能地使用Guava的[ImmutableMap][immutablemap]、
+[ImmutableList][immutablelist]或者[ImmutableSet][immutableset]。他们都有builder模式以便于你可以动态得构建他们，然后通过调用build方法来使之保持不可变。
+
 Classes should be made immutable by declaring fields immutable (via *final*)
 and by using immutable collections. Optionally, you can make the class itself 
 *final* so that it can't be extended and made mutable.
 
-## Avoid lots of Util classes
+类都应该通过声明不可变字段的方式（使用 *final*）被构造成不可变的，以及使用不可变集合。可选的是，你也可以将这个类声明为*final*，所以它就不可能被继承和被改变。
+
+## Avoid lots of Util classes 避免大量的Util类
 
 Be careful if you find yourself adding a lot of methods to a Util class.
+
+如果你在为Util类添加大量方法的时候，就要开始小心了。
 
 ```java
 public class MiscUtil {
@@ -269,10 +301,14 @@ These classes, at first, seem attractive because the methods that go in them
 don't really belong in any one place. So you throw them all in here in the
 name of code reuse.
 
+这些类起初看起来很诱人，因为在这些方法里面，真的可以不属于任何一个地方。所以你就以代码重用的名义把他们全部扔到了这里。
+
 The cure is worse than the disease. Put these classes where they belong, or 
 if you must have common methods like this, consider [Java 8][java8]'s default
 methods on interfaces. Then you could lump common actions into interfaces. 
 And, since they're interfaces, you can implement multiple of them.
+
+这属于饮鸠止渴。把这些类放回他们该在的地方，或者如果你不得不有一些这样的公共方法，考虑一下[Java 8][java8]的接口默认方法。然后你把共同行为并到一起放进接口。而且，因为接口的好处，你可以有不同的具体实现。
 
 ```java
 public interface Thrower {
@@ -288,27 +324,37 @@ public interface Thrower {
 
 Then every class which needs it can simply implement this interface.
 
-## Formatting
+然后每个类就可以很轻易地实现这个接口所需要的东西。
+
+## Formatting 格式化
 
 Formatting is so much less important than most programmers make it out to be.
 Does consistency show that you care about your craft and does it help others
 read? Absolutely. But let's not waste a day adding spaces to if blocks so that
 it "matches".
 
+大多数程序员都觉得格式化是那么地不重要。（-。-）保持一致性表明了你对技术的在乎以及帮助他人阅读代码吗？当然。但是让我们不再浪费一整天时间去添加空格，以便于代码块可以「匹配」。
+
 If you absolutely need a code formatting guide, I highly recommend
 [Google's Java Style][googlestyle] guide. The best part of that guide is the
 [Programming Practices][googlepractices] section. Definitely worth a read.
 
-### Javadoc
+如果你极其想要一个代码格式化手册，我强烈推荐[Google的Java代码风格][googlestyle]指南。该指南最好的部分就是[编程实践][googlepractices]那一节，非常值得一读。
+
+### Javadoc Java文档
 
 Documenting your user facing code is important. And this means 
 [using examples][javadocex] and using sensible descriptions of variables,
 methods, and classes.
 
+文档化你的用户使用代码是非常重要的。这意味着[使用例子][javadocex]和使用恰当的变量、方法和类的描述。
+
 The corollary of this is to not document what doesn't need documenting. If you
 don't have anything to say about what an argument is, or if it's obvious,
 don't document it. Boilerplate documentation is worse than no documentation at
 all, as it tricks your users into thinking that there is documentation.
+
+这样做的结果不是说要将本来不必要的内容也文档化。如果你对于这个变量没有任何内容想说的，或者它非常明显，那就不要文档化。样板式的文档比完全没有文档更加糟糕，因为这对你的用户来说会误以为这有个文档。
 
 ## Streams
 

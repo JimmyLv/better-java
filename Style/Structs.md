@@ -115,3 +115,6 @@ we were trying to avoid, but it gets you immutable objects and a very fluent
 interface.
 
 这里有其他的[更好的Builder例子][builderex]，可以给你一些该有的味道。这就彻底解决了一些我们曾经试图避免的样板文件，但它可以让你使用不可变对象以及一个非常流畅的接口。
+
+[dontbean]: http://www.javapractices.com/topic/TopicAction.do?Id=84
+[builderex]: http://jlordiales.me/2012/12/13/the-builder-pattern-in-practice/

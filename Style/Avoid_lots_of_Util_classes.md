@@ -44,3 +44,5 @@ public interface Thrower {
 Then every class which needs it can simply implement this interface.
 
 然后每个类就可以很轻易地实现这个接口所需要的东西。
+
+[java8]: http://www.java8.org/

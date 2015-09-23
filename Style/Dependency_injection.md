@@ -21,3 +21,9 @@ configuration file format, and instead they put the injection logic in
 annotations and in code.
 
 使用Spring的另一种选择是Google和Square的[Dagger][dagger]库或者是Google的[Guice][guice]。他们不会使用Spring的XML配置文件格式，而是将注入逻辑放在代码的注解里面。
+
+[di]: http://en.wikipedia.org/wiki/Dependency_injection
+[spring]: http://projects.spring.io/spring-framework/
+[springso]: http://programmers.stackexchange.com/questions/92393/what-does-the-spring-framework-do-should-i-use-it-why-or-why-not
+[dagger]: http://square.github.io/dagger/
+[guice]: https://code.google.com/p/google-guice/

@@ -53,3 +53,8 @@ dealing with nulls is still required there.
 
 这比链式的null检查好多了。唯一的缺点是标准库还没有很好地支持Optional的使用，所以
 处理空值依然是有必要的。
+
+[nullable]: http://code.google.com/p/google-guice/wiki/UseNullable
+[intellij]: http://www.jetbrains.com/idea/
+[java8]: http://www.java8.org/
+[optional]: http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html

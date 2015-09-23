@@ -27,3 +27,7 @@ don't document it. Boilerplate documentation is worse than no documentation at
 all, as it tricks your users into thinking that there is documentation.
 
 这样做的结果不是说要将本来不必要的内容也文档化。如果你对于这个变量没有任何内容想说的，或者它非常明显，那就不要文档化。样板式的文档比完全没有文档更加糟糕，因为这对你的用户来说会误以为这有个文档。
+
+[googlestyle]: http://google-styleguide.googlecode.com/svn/trunk/javaguide.html
+[googlepractices]: http://google-styleguide.googlecode.com/svn/trunk/javaguide.html#s6-programming-practices
+[javadocex]: http://docs.guava-libraries.googlecode.com/git-history/release/javadoc/com/google/common/collect/ImmutableMap.Builder.html

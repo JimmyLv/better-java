@@ -1,6 +1,4 @@
-[immutablemap]: http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/collect/ImmutableMap.html
-[immutablelist]: http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/collect/ImmutableList.html
-[immutableset]: http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/collect/ImmutableSet.html
+
 [depconverge]: https://maven.apache.org/enforcer/enforcer-rules/dependencyConvergence.html
 [copydir]: http://commons.apache.org/proper/commons-io/javadocs/api-release/org/apache/commons/io/FileUtils.html#copyDirectory(java.io.File,%20java.io.File)
 [writestring]: http://commons.apache.org/proper/commons-io/javadocs/api-release/org/apache/commons/io/FileUtils.html#writeStringToFile(java.io.File,%20java.lang.String)
@@ -32,12 +30,7 @@
 [puppet]: http://puppetlabs.com/
 [ansible]: http://www.ansible.com/home
 [squadron]: http://www.gosquadron.com
-[googlestyle]: http://google-styleguide.googlecode.com/svn/trunk/javaguide.html
-[googlepractices]: http://google-styleguide.googlecode.com/svn/trunk/javaguide.html#s6-programming-practices
-[di]: http://en.wikipedia.org/wiki/Dependency_injection
-[spring]: http://projects.spring.io/spring-framework/
-[springso]: http://programmers.stackexchange.com/questions/92393/what-does-the-spring-framework-do-should-i-use-it-why-or-why-not
-[java8]: http://www.java8.org/
+
 [javastream]: http://blog.hartveld.com/2013/03/jdk-8-33-stream-api.html
 [slf4j]: http://www.slf4j.org/
 [slf4jmanual]: http://www.slf4j.org/manual.html
@@ -52,19 +45,13 @@
 [apachecommons]: http://commons.apache.org/
 [lombok]: http://projectlombok.org/
 [javatuples]: http://www.javatuples.org/
-[dontbean]: http://www.javapractices.com/topic/TopicAction.do?Id=84
-[nullable]: http://code.google.com/p/google-guice/wiki/UseNullable
-[optional]: http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html
 [jdbc]: http://docs.spring.io/spring/docs/4.0.3.RELEASE/javadoc-api/org/springframework/jdbc/core/JdbcTemplate.html
 [jooq]: http://www.jooq.org/
 [dao]: http://www.javapractices.com/topic/TopicAction.do?Id=66
 [gradle]: http://www.gradle.org/
-[intellij]: http://www.jetbrains.com/idea/
 [intellijexample]: http://i.imgur.com/92ztcCd.png
 [chronon]: http://blog.jetbrains.com/idea/2014/03/try-chronon-debugger-with-intellij-idea-13-1-eap/
 [eclipse]: https://www.eclipse.org/
-[dagger]: http://square.github.io/dagger/
-[guice]: https://code.google.com/p/google-guice/
 [netbeans]: https://netbeans.org/
 [mat]: http://www.eclipse.org/mat/
 [jmap]: http://docs.oracle.com/javase/7/docs/technotes/tools/share/jmap.html
@@ -72,8 +59,6 @@
 [taint]: http://en.wikipedia.org/wiki/Taint_checking
 [checker]: http://types.cs.washington.edu/checker-framework/
 [customchecker]: http://types.cs.washington.edu/checker-framework/tutorial/webpages/encryption-checker-cmd.html
-[builderex]: http://jlordiales.me/2012/12/13/the-builder-pattern-in-practice/
-[javadocex]: http://docs.guava-libraries.googlecode.com/git-history/release/javadoc/com/google/common/collect/ImmutableMap.Builder.html
 [dropwizard]: https://dropwizard.github.io/dropwizard/
 [jersey]: https://jersey.java.net/
 [springboot]: http://projects.spring.io/spring-boot/
@@ -82,4 +67,3 @@
 [jaxrs]: http://en.wikipedia.org/wiki/Java_API_for_RESTful_Web_Services
 [playdoc]: http://www.playframework.com/documentation/2.3.x/Anatomy
 [java8datetime]: http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html
-[checkedex]: http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html

@@ -43,3 +43,7 @@ and by using immutable collections. Optionally, you can make the class itself
 *final* so that it can't be extended and made mutable.
 
 类都应该通过声明不可变字段的方式（使用 *final*）被构造成不可变的，以及使用不可变集合。可选的是，你也可以将这个类声明为*final*，所以它就不可能被继承和被改变。
+
+[immutablemap]: http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/collect/ImmutableMap.html
+[immutablelist]: http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/collect/ImmutableList.html
+[immutableset]: http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/collect/ImmutableSet.html

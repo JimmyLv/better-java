@@ -14,7 +14,7 @@
     * [Frameworks 框架](Deploying/Frameworks.md) 
     * [Maven](Deploying/Maven.md) 
     * [Continuous Integration 持续集成](Deploying/Continuous_Integration.md)
-    * [Maven repository Maven 仓库](Deploying/Maven repository.md)
+    * [Maven repository Maven 仓库](Deploying/Maven_repository.md)
     * [Configuration management 配置管理](Deploying/Configuration_management.md)
 * [Libraries 库]
 * [Tools 工具]

@@ -9,6 +9,13 @@
    * [Immutable-by-default 默认不可变](Style/Immutable-by-default.md)
    * [Avoid lots of Util classes 避免大量工具类](Style/Avoid_lots_of_Util_classes.md)
    * [Formatting 格式化](Style/Formatting.md)
+   * [Streams 流](Style/Streams.md)
+* [Deploying 部署](Deploying/Deploying.md)
+    * [Frameworks 框架](Deploying/Frameworks.md) 
+    * [Maven](Deploying/Maven.md) 
+    * [Continuous Integration 持续集成](Deploying/Continuous_Integration.md)
+    * [Maven repository Maven 仓库](Deploying/Maven repository.md)
+    * [Configuration management 配置管理](Deploying/Configuration_management.md)
 * [Libraries 库]
 * [Tools 工具]
 * [Resources 资源]

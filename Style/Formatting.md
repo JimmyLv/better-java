@@ -1,17 +1,17 @@
-## Formatting 格式化
+## Formatting 代码格式
 
 Formatting is so much less important than most programmers make it out to be.
 Does consistency show that you care about your craft and does it help others
 read? Absolutely. But let's not waste a day adding spaces to if blocks so that
 it "matches".
 
-大多数程序员都觉得格式化是那么地不重要。（-。-）保持一致性表明了你对技术的在乎以及帮助他人阅读代码吗？当然。但是让我们不再浪费一整天时间去添加空格，以便于代码块可以「匹配」。
+大多数程序员都觉得代码格式是那么地不重要。保持一致性就表明了你对技术的在乎以及便于帮助他人对代码的阅读吗？当然。让我们不再浪费一整天时间去添加空格，以便于代码块可以「匹配」。
 
 If you absolutely need a code formatting guide, I highly recommend
 [Google's Java Style][googlestyle] guide. The best part of that guide is the
 [Programming Practices][googlepractices] section. Definitely worth a read.
 
-如果你极其想要一个代码格式化手册，我强烈推荐[Google的Java代码风格][googlestyle]指南。该指南最好的部分就是[编程实践][googlepractices]那一节，非常值得一读。
+如果你极其想要一个代码格式手册，我强烈推荐[Google的Java代码风格][googlestyle]指南。该指南最好的部分就是[编程实践][googlepractices]那一节，非常值得一读。
 
 ### Javadoc Java文档
 

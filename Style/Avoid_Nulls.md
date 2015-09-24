@@ -1,4 +1,4 @@
-## Avoid Nulls 避免Null
+## Avoid Nulls 避免Nulls
 
 Try to avoid using nulls when you can. Do not return null collections when you
 should have instead returned an empty collection. If you're going to use null,

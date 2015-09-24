@@ -1,5 +1,4 @@
 
-[depconverge]: https://maven.apache.org/enforcer/enforcer-rules/dependencyConvergence.html
 [copydir]: http://commons.apache.org/proper/commons-io/javadocs/api-release/org/apache/commons/io/FileUtils.html#copyDirectory(java.io.File,%20java.io.File)
 [writestring]: http://commons.apache.org/proper/commons-io/javadocs/api-release/org/apache/commons/io/FileUtils.html#writeStringToFile(java.io.File,%20java.lang.String)
 [readlines]: http://commons.apache.org/proper/commons-io/javadocs/api-release/org/apache/commons/io/IOUtils.html#readLines(java.io.InputStream)
@@ -11,27 +10,14 @@
 [maps]: http://docs.guava-libraries.googlecode.com/git-history/release/javadoc/com/google/common/collect/Maps.html
 [sets]: http://docs.guava-libraries.googlecode.com/git-history/release/javadoc/com/google/common/collect/Sets.html
 [collections2]: http://docs.guava-libraries.googlecode.com/git-history/release/javadoc/com/google/common/collect/Collections2.html
-[rootpom]: https://gist.github.com/cxxr/10787344
-[mavenexample]: http://books.sonatype.com/mvnex-book/reference/index.html
-[jenkins]: http://jenkins-ci.org/
-[travis]: https://travis-ci.org/
-[cobertura]: http://cobertura.github.io/cobertura/
-[coberturamaven]: http://mojo.codehaus.org/cobertura-maven-plugin/usage.html
-[nexus]: http://www.sonatype.com/nexus
-[artifactory]: http://www.jfrog.com/
-[mavenrepo]: http://stackoverflow.com/questions/364775/should-we-use-nexus-or-artifactory-for-a-maven-repo
-[artifactorymirror]: http://www.jfrog.com/confluence/display/RTF/Configuring+Artifacts+Resolution
+
+
 [gson]: https://code.google.com/p/google-gson/
 [gsonguide]: https://sites.google.com/site/gson/gson-user-guide
 [joda]: http://www.joda.org/joda-time/
 [lombokguide]: http://jnb.ociweb.com/jnb/jnbJan2010.html
-[play]: http://www.playframework.com/
-[chef]: http://www.getchef.com/chef/
-[puppet]: http://puppetlabs.com/
-[ansible]: http://www.ansible.com/home
-[squadron]: http://www.gosquadron.com
 
-[javastream]: http://blog.hartveld.com/2013/03/jdk-8-33-stream-api.html
+
 [slf4j]: http://www.slf4j.org/
 [slf4jmanual]: http://www.slf4j.org/manual.html
 [junit]: http://junit.org/
@@ -48,7 +34,6 @@
 [jdbc]: http://docs.spring.io/spring/docs/4.0.3.RELEASE/javadoc-api/org/springframework/jdbc/core/JdbcTemplate.html
 [jooq]: http://www.jooq.org/
 [dao]: http://www.javapractices.com/topic/TopicAction.do?Id=66
-[gradle]: http://www.gradle.org/
 [intellijexample]: http://i.imgur.com/92ztcCd.png
 [chronon]: http://blog.jetbrains.com/idea/2014/03/try-chronon-debugger-with-intellij-idea-13-1-eap/
 [eclipse]: https://www.eclipse.org/
@@ -59,9 +44,7 @@
 [taint]: http://en.wikipedia.org/wiki/Taint_checking
 [checker]: http://types.cs.washington.edu/checker-framework/
 [customchecker]: http://types.cs.washington.edu/checker-framework/tutorial/webpages/encryption-checker-cmd.html
-[dropwizard]: https://dropwizard.github.io/dropwizard/
 [jersey]: https://jersey.java.net/
-[springboot]: http://projects.spring.io/spring-boot/
 [spark]: http://www.sparkjava.com/
 [assertj]: http://joel-costigliola.github.io/assertj/index.html
 [jaxrs]: http://en.wikipedia.org/wiki/Java_API_for_RESTful_Web_Services

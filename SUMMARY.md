@@ -18,6 +18,7 @@
     * [Configuration management 配置管理](Deploying/Configuration_management.md)
 * [Libraries 库](Libraries/Libraries.md)
     * [Missing Features 遗失的特性](Libraries/Missing_Features.md)
+    * [Testing 测试](Libraries/Testing.md)
 * [Tools 工具]
 * [Resources 资源]
 

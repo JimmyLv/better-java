@@ -16,7 +16,8 @@
     * [Continuous Integration 持续集成](Deploying/Continuous_Integration.md)
     * [Maven repository Maven 仓库](Deploying/Maven_repository.md)
     * [Configuration management 配置管理](Deploying/Configuration_management.md)
-* [Libraries 库]
+* [Libraries 库](Libraries/Libraries.md)
+    * [Missing Features 遗失的特性](Libraries/Missing_Features.md)
 * [Tools 工具]
 * [Resources 资源]
 

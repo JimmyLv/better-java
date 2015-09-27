@@ -19,6 +19,12 @@
 * [Libraries 库](Libraries/Libraries.md)
     * [Missing Features 遗失的特性](Libraries/Missing_Features.md)
     * [Testing 测试](Libraries/Testing.md)
-* [Tools 工具]
-* [Resources 资源]
+* [Tools 工具](Tools/Tools.md)
+    * [IntelliJ IDEA](Tools/IntelliJ_IDEA.md)
+    * [JRebel](/Tools/JRebel.md)
+    * [Eclipse Memory Analyzer Eclipse内存分析器](/Tools/Eclipse_Memory_Analyzer.md)
+    * [The Checker Framework 检查器框架](/Tools/The_Checker_Framework.md)
+* [Resources 资源](/Resources/Resources.md)
+    * [Books 书籍](/Resources/Books.md)
+    * [Podcasts 播客](/Resources/Podcasts.md)
 

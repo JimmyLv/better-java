@@ -15,3 +15,4 @@ This article was originally posted on
 
 > 未翻译部分请看->>>>>>>>>>>>>>>>>>> [原项目地址](https://github.com/cxxr/better-java)
 
+[initializingbean]: http://docs.spring.io/spring/docs/3.2.6.RELEASE/javadoc-api/org/springframework/beans/factory/InitializingBean.html

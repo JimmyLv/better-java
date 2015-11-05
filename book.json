@@ -2,8 +2,14 @@
     "gitbook": ">=2.0.0",
     "title": "Better Java 中英对照译本",
     "description": "e2c translation for better Java!",
-    "styles": {},
-     "variables": {
+    "styles": {
+        // "website": "styles/website.css",
+        // "ebook": "styles/ebook.css",
+        // "pdf": "styles/pdf.css",
+        // "mobi": "styles/mobi.css",
+        // "epub": "styles/epub.css"
+    },
+    "variables": {
         "myTest": "Hello World"
     },
     "plugins": [

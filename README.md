@@ -11,10 +11,6 @@ Java是世上最流行的编程语言之一，可是看起来没人喜欢它。�
 This article was originally posted on
 [my blog](https://blog.seancassidy.me/better-java.html).
 
-这篇文章原来发表在[作者博客](https://blog.seancassidy.me/better-java.html)里。
+这篇文章原来发表于[作者博客](https://blog.seancassidy.me/better-java.html)。
 
-> 未翻译部分请看->>>>>>>>>>>>>>>>>>> [原项目地址](https://github.com/cxxr/better-java)
-
-[initializingbean]: http://docs.spring.io/spring/docs/3.2.6.RELEASE/javadoc-api/org/springframework/beans/factory/InitializingBean.html
-
-{% include "git+https://github.com/GitbookIO/documentation.git/README.md#0.0.1" %}
+> 中译本的[GitHub地址](https://github.com/JimmyLv/better-java-zh)与[GitBook地址](https://jimmylv.gitbooks.io/better-java-zh/content/)。
